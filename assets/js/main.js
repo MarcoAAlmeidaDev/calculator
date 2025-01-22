@@ -4,7 +4,8 @@
                         '0', '.', '-', '+', '/', '*'];
 
   const display = document.querySelector('.display');
-  
+  display.setAttribute('readonly', true); // Torna o display somente leitura para evitar teclado móvel
+
   document.addEventListener('keydown', e => {
     if(e.key === 'Enter') {
       resultCalc();
